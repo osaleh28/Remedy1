@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Remedy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <img src="Images/Remedy.png" alt="Remedy Logo" class="logo">
+
+  <h3 id="greeting" class="greeting"></h3>
+
+  <button id="logout-btn" class="logout-btn">Log Out</button>
+
+ <div class="container">
+
+  <h2>Your Medications</h2>
+
+  <div id="med-list" class="med-list">
+    <!-- Medication items will go here later -->
+  </div>
+
+  <div id="empty-state" class="empty-state">
+    <p>You haven't added any medications yet.</p>
+  </div>
+
+ 
+    <button id="add-med-btn" class="btn">Add Medication</button>
+
+<form id="add-med-form" class="hidden">
+
+  <label for="med-name">Medication Name</label>
+  <input type="text" id="med-name" name="med-name" placeholder="e.g. Ibuprofen" required>
+
+  <label for="med-dose">Dose</label>
+  <input type="text" id="med-dose" name="med-dose" placeholder="e.g. 200mg" required>
+
+  <label for="med-time">Time</label>
+  <input type="time" id="med-time" name="med-time" required>
+
+  <label for="med-frequency">Frequency</label>
+  <select id="med-frequency" name="med-frequency" required>
+    <option value="">Select frequency</option>
+    <option value="daily">Daily</option>
+    <option value="weekly">Weekly</option>
+    <option value="as-needed">As Needed</option>
+  </select>
+
+  <button type="submit" class="btn">Save Medication</button>
+
+</form>
+
+</div>
+
+ <script src="dashboard.js"></script>
+</body>
+</html>
