@@ -171,3 +171,17 @@ label {
   text-decoration: line-through;
   color: #9aa5b1;
 }
+
+.taken-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.taken-label {
+  font-size: 11px;
+  color: #6b7684;
+  margin-bottom: 4px;
+  white-space: nowrap;
+}
