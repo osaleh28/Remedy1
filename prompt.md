@@ -5,3 +5,4 @@
 - I asked ChatGPT to come up with a logo.  I asked ChatGPT to make sure that it incorporates the shape of a pill in the logo.
 - I asked Claude AI to make a homepage for me
 - I asked Claude to create a "Sign Up" button and a "Log In" Button.  For the Sign Up Button, I wanted a bell icon next to the word "Sign Up", and then for the Log In Button I wanted to put a tiny prescription pad next to the word "Log In".
+In the dashboard page where I have a checkbox to cross off the medication that the patient took, can you put under the checkmark box "Did you take your medication?"
