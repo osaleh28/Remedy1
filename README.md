@@ -9,6 +9,8 @@ Live Demo
 
 [View the live site](https://osaleh28.github.io/Remedy1/)
 
+https://osaleh28.github.io/Remedy1/
+
 Problem
 
 Missing a dose, forgetting whether a medication was already taken, or losing track of a changing prescription schedule is a common, everyday problem — especially for anyone managing more than one medication. Most existing solutions are either overly complex clinical tools or simple reminder apps with no real record of what's actually been taken.
