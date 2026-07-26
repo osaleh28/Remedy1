@@ -3,6 +3,19 @@
 - I later told ChatGPT that I would like to create an application for a daily medication reminder, and it agreed that it was a better idea as it aligns with my previous career, which was a doctor.
 - I asked Claude AI to help me come up with a name for an application to help patients remember there medications and it came up with the app name Remedy for me.
 - I asked ChatGPT to come up with a logo.  I asked ChatGPT to make sure that it incorporates the shape of a pill in the logo.
-- I asked Claude AI to make a homepage for me
+- The logo that ChatGPT gave me, also came up with a sample homepage
+- Hey Claude, how do I make my landing page look like this in html and css (I was referring to the logo and homepage that chatgpt created for me)
+- Initially, Claude gave me a whole homepage in HTML and CSS, but I later asked for Claude to make the homepage in HTML first, step by step, and then CSS, step by step
 - I asked Claude to create a "Sign Up" button and a "Log In" Button.  For the Sign Up Button, I wanted a bell icon next to the word "Sign Up", and then for the Log In Button I wanted to put a tiny prescription pad next to the word "Log In".
+- When things were not centered, I told Claude: "I want everything in the body to be centered".
+- When I felt that the webpage was becoming too complex, I told Claude: "Let's keep it simple".
+- Claude would give me different examples, and I asked it: " let's look at the one-blob version"
+- When I reviewed what the one blob version looked like, I decided that I did not want it and told Claude to remove the one-blob version
+- I don't want spacing between the remedy logo and the <p>The meds you won't forget</p>
+- Claude didn't understand by what I meant when I gave the previous commmand that I didn't want any spacing between the remedy logo and the <p>The Meds You Won't Forget<p>, so I put in a screenshot of what I was being shown
+- Claude would explain every line of code that is being written.  There were some instances that Claude would abbreviate some words, so I would ask Claude what it means so I can understand it.  I would ask "What does SVG mean?", and Claude would answer that it stands for Scalable Vector Graphics.
+- Now let's plan the next page after you click on "get started"...
+- Let's build a signup page
+- I was using VS Code to build my website: "how should I label my new file on vs code"
+- "how do I link the two pages together"
 In the dashboard page where I have a checkbox to cross off the medication that the patient took, can you put under the checkmark box "Did you take your medication?"
