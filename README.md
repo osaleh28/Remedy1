@@ -7,7 +7,7 @@ The meds you won't forget.
 
 Live Demo
 
-View the live site
+[View the live site](https://osaleh28.github.io/Remedy1/)
 
 Problem
 
