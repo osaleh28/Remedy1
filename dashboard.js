@@ -1,7 +1,11 @@
+// ===== Greeting =====
+// Grabs the logged-in user's first name from localStorage (set during login)
+// and displays a personalized greeting on the dashboard.
 const greeting = document.getElementById('greeting');
 const firstName = localStorage.getItem('userFirstName');
 greeting.textContent = 'Hello, ' + firstName + '!';
 
+// ===== Element references =====
 const addMedBtn = document.getElementById('add-med-btn');
 const addMedForm = document.getElementById('add-med-form');
 const medList = document.getElementById('med-list');
@@ -13,14 +17,20 @@ const medDose = document.getElementById('med-dose');
 const medTime = document.getElementById('med-time');
 const medFrequency = document.getElementById('med-frequency');
 
+// Tracks which medication (by index) is currently being edited.
+// null = we're adding a new medication, not editing an existing one.
 let editingIndex = null;
 
+// ===== Add Medication button =====
+// Resets the form (clearing any leftover edit data) and shows/hides it.
 addMedBtn.addEventListener('click', function () {
   editingIndex = null;
   addMedForm.reset();
   addMedForm.classList.toggle('hidden');
 });
 
+// ===== Logout =====
+// Sends the user back to the login/landing page.
 logoutBtn.addEventListener('click', function () {
   window.location.href = 'index.html';
 });
