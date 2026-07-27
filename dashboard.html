@@ -7,10 +7,13 @@
 </head>
 <body>
 
+  <!-- App logo on top of dashboard -->
   <img src="Images/Remedy.png" alt="Remedy Logo" class="logo">
 
+  <!-- Personalized greeting -->
   <h3 id="greeting" class="greeting"></h3>
 
+  <!-- Logs user out -->
   <button id="logout-btn" class="logout-btn">Log Out</button>
 
  <div class="container">
@@ -25,20 +28,26 @@
     <p>You haven't added any medications yet.</p>
   </div>
 
- 
-    <button id="add-med-btn" class="btn">Add Medication</button>
 
+    <!-- Add Medication Button -->
+    <button id="add-med-btn" class="btn">Add Medication</button>
+   
+<!-- Form for adding new medication -->
 <form id="add-med-form" class="hidden">
 
+  <!-- Fill in Medication name -->
   <label for="med-name">Medication Name</label>
   <input type="text" id="med-name" name="med-name" placeholder="e.g. Ibuprofen" required>
 
+  <!-- Fill In Medication dose -->
   <label for="med-dose">Dose</label>
   <input type="text" id="med-dose" name="med-dose" placeholder="e.g. 200mg" required>
 
+  <!-- Fill in Time to take medication -->
   <label for="med-time">Time</label>
   <input type="time" id="med-time" name="med-time" required>
 
+  <!-- Frequency of medication dropdown -->
   <label for="med-frequency">Frequency</label>
   <select id="med-frequency" name="med-frequency" required>
     <option value="">Select frequency</option>
