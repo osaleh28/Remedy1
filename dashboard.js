@@ -35,6 +35,9 @@ logoutBtn.addEventListener('click', function () {
   window.location.href = 'index.html';
 });
 
+// ===== Data access =====
+// Reads the saved medications array out of localStorage.
+// Returns an empty array if nothing has been saved yet.
 function getMedications() {
   const stored = localStorage.getItem('medications');
   if (stored) {
@@ -44,16 +47,22 @@ function getMedications() {
   }
 }
 
+// ===== Rendering =====
+// Rebuilds the entire medication list in the DOM based on what's in localStorage.
+// Called any time the data changes (add, edit, remove, toggle taken).
 function renderMedications() {
   const medications = getMedications();
 
+   // Clear out the old list before re-rendering
   medList.innerHTML = '';
 
+   // No medications saved — show the "empty" message instead of the list
   if (medications.length === 0) {
     emptyState.classList.remove('hidden');
   } else {
     emptyState.classList.add('hidden');
 
+    
     medications.forEach(function (med, index) {
       const item = document.createElement('div');
       item.className = 'med-item';
@@ -61,6 +70,7 @@ function renderMedications() {
       const takenWrapper = document.createElement('div');
       takenWrapper.className = 'taken-wrapper';
 
+      // "Did you take it?" checkbox + label
       const takenLabel = document.createElement('span');
       takenLabel.textContent = 'Did you take your medication?';
       takenLabel.className = 'taken-label';
@@ -76,13 +86,16 @@ function renderMedications() {
       takenWrapper.appendChild(takenLabel);
       takenWrapper.appendChild(takenCheckbox);
 
+      // Text summary of the medication: name, dose, time, frequency
       const text = document.createElement('span');
       text.textContent = med.name + ' - ' + med.dose + ' - ' + med.time + ' - ' + med.frequency;
 
+      // Visually mark the text as "taken" if applicable 
       if (med.taken) {
         text.classList.add('taken-text');
       }
 
+      // Edit button
       const editBtn = document.createElement('button');
       editBtn.textContent = 'Edit';
       editBtn.className = 'edit-btn';
@@ -90,6 +103,7 @@ function renderMedications() {
         startEditing(index);
       });
 
+      // Remove button
       const removeBtn = document.createElement('button');
       removeBtn.textContent = 'Remove';
       removeBtn.className = 'remove-btn';
@@ -106,6 +120,9 @@ function renderMedications() {
   }
 }
 
+// ===== Remove =====
+// Deletes a medication by index, saves the updated list, and re-renders.
+// If the medication being removed was mid-edit, cancels that edit too.
 function removeMedication(index) {
   const medications = getMedications();
   medications.splice(index, 1);
@@ -120,6 +137,8 @@ function removeMedication(index) {
   renderMedications();
 }
 
+// ===== Taken toggle =====
+// Flips the "taken" status for a medication and saves it.
 function toggleTaken(index) {
   const medications = getMedications();
   medications[index].taken = !medications[index].taken;
@@ -127,6 +146,9 @@ function toggleTaken(index) {
   renderMedications();
 }
 
+// ===== Edit =====
+// Pre-fills the form with an existing medication's data and opens it,
+// so the user can update and re-save it.
 function startEditing(index) {
   const medications = getMedications();
   const med = medications[index];
@@ -140,6 +162,7 @@ function startEditing(index) {
   addMedForm.classList.remove('hidden');
 }
 
+// ===== Form submit (add or save edit) =====
 addMedForm.addEventListener('submit', function (event) {
   event.preventDefault();
 
