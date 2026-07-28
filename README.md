@@ -7,13 +7,13 @@ The meds you won't forget.
 Live Demo
 https://osaleh28.github.io/Remedy1/
 
-Problem
+Problem: 
 - As people grow busier and older, they often forget what medications to take and when to take them.  Missing a dose, forgetting whether a medication was already taken, or losing track of a changing prescription schedule is a common, everyday problem — especially for anyone managing more than one medication. Most existing solutions are either overly complex clinical tools or simple reminder apps with no real record of what's actually been taken.
 
-Value
+Value: 
 - Remedy gives someone a simple way to keep track of their medications: what they're taking, how much, when, and whether today's dose has been taken. It removes the mental work of remembering medication details or relying on memory alone to know if a dose was missed.
 
-Project Plan
+Project Plan :
 - The goal was to build a working medication-tracking app end to end — from account creation through daily use — using only HTML, CSS, and vanilla JavaScript, with browser localStorage standing in for a real backend/database.
 The approach started with a static homepage matching a reference design, then came the account creation (signup) and login page, and then the core dashboard functionality which enables the user to add, edit, remove, and mark medications as taken, along with what time, dose, and frequency they are to be taken at. Each piece was built one at a time, rather than alla t once.
 
