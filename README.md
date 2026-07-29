@@ -36,6 +36,7 @@ Planned next:
 - Allow the patient to take pictures of his medication bottles so that the application can read the label and fill in the information automatically
 - Alert the patient that refills are due and also send a message to the patient's doctor
 - I would eventually like to create a full chart for the patient, which includes date of birth, height, weight, BMI, medical history (Hypertension, Diabetes, High Cholesterol,) primay care doctor with address and phone number, other specialists with address and phone number
+- Create a mobile application
 
 Technologies Used 
 - HTML5 C
