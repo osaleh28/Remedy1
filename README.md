@@ -1,8 +1,7 @@
 # Remedy
 Remedy is an easy to use medication reminder application
 
-Remedy
-The meds you won't forget.
+Remedy:  The meds you won't forget.
 
 Live Demo
 https://osaleh28.github.io/Remedy1/
